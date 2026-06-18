@@ -151,3 +151,19 @@
     -webkit-font-smoothing: antialiased;
   }
 }
+
+@keyframes scroll-up {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+@keyframes scroll-down {
+  from { transform: translateY(-50%); }
+  to { transform: translateY(0); }
+}
+
+@utility animate-scroll-up {
+  animation: scroll-up 30s linear infinite;
+}
+@utility animate-scroll-down {
+  animation: scroll-down 30s linear infinite;
+}
