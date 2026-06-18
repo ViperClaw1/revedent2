@@ -22,6 +22,8 @@ function Index() {
       <Navbar />
       <main>
         <Hero />
+        <TrustBanner />
+        <ValueProposition />
       </main>
     </div>
   );
