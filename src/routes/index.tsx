@@ -3,6 +3,8 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { TrustBanner } from "@/components/TrustBanner";
 import { ValueProposition } from "@/components/ValueProposition";
+import { Services } from "@/components/Services";
+import { HowItWorks } from "@/components/HowItWorks";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,6 +26,8 @@ function Index() {
         <Hero />
         <TrustBanner />
         <ValueProposition />
+        <Services />
+        <HowItWorks />
       </main>
     </div>
   );
