@@ -1,0 +1,83 @@
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+
+const links = [
+  { label: "Services", href: "#services" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "About", href: "#about" },
+  { label: "Resources", href: "#resources" },
+];
+
+export function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <header className="fixed top-0 inset-x-0 z-50">
+      <div className="backdrop-blur-xl bg-white/60 border-b border-white/40 shadow-[0_1px_0_0_rgba(255,255,255,0.6)]">
+        <nav className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
+          <a href="/" className="text-xl font-extrabold tracking-tight text-navy">
+            revedent<span className="text-cyan">.ai</span>
+          </a>
+
+          <ul className="hidden md:flex items-center gap-8">
+            {links.map((l) => (
+              <li key={l.label}>
+                <a
+                  href={l.href}
+                  className="text-sm font-medium text-slate-500 hover:text-navy transition-colors"
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <div className="hidden md:block">
+            <a
+              href="#demo"
+              className="inline-flex items-center rounded-md bg-cyan px-4 py-2 text-sm font-semibold text-white transition-all duration-200 hover:scale-105 hover:shadow-[0_0_24px_rgba(6,182,212,0.55)]"
+            >
+              Book a Demo
+            </a>
+          </div>
+
+          <button
+            onClick={() => setOpen((v) => !v)}
+            className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-navy hover:bg-white/60"
+            aria-label="Toggle menu"
+            aria-expanded={open}
+          >
+            {open ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </nav>
+
+        {open && (
+          <div className="md:hidden border-t border-white/40 bg-white/80 backdrop-blur-xl">
+            <ul className="px-6 py-4 space-y-3">
+              {links.map((l) => (
+                <li key={l.label}>
+                  <a
+                    href={l.href}
+                    onClick={() => setOpen(false)}
+                    className="block text-sm font-medium text-slate-500 hover:text-navy"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+              <li>
+                <a
+                  href="#demo"
+                  onClick={() => setOpen(false)}
+                  className="mt-2 inline-flex w-full items-center justify-center rounded-md bg-cyan px-4 py-2 text-sm font-semibold text-white"
+                >
+                  Book a Demo
+                </a>
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+}
