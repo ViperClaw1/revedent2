@@ -181,3 +181,14 @@
 @utility animate-scanner {
   animation: scanner-sweep 3s linear infinite;
 }
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@utility animate-float-slow {
+  animation: float-y 5s ease-in-out infinite;
+}
+@utility animate-float-slower {
+  animation: float-y 7s ease-in-out infinite;
+}

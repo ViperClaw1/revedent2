@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight, Check, FileText, Sparkles } from "lucide-react";
+import { ArrowRight, Check, FileText, Shield, TrendingUp } from "lucide-react";
 
 type Claim = {
   patient: string;
@@ -86,15 +86,12 @@ export function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* LEFT — Content */}
         <div className="flex flex-col justify-center">
-          <span className="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-cyan-50 text-cyan-600 text-xs font-semibold tracking-widest uppercase border border-cyan-100">
-            <Sparkles className="w-3.5 h-3.5" />
-            AI-Powered Claim Scrubbing
-          </span>
-
-          <h1 className="mt-6 text-5xl md:text-6xl font-bold text-[#0B1120] tracking-tight leading-[1.05]">
+          <h1 className="text-5xl md:text-6xl font-bold text-[#0B1120] tracking-tight leading-[1.05]">
             Smarter Dental Billing.
             <br />
-            <span className="text-[#0B1120]">Maximum Revenue.</span>
+            <span className="bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">
+              Maximum Revenue.
+            </span>
           </h1>
 
           <p className="mt-6 text-lg text-slate-500 leading-relaxed max-w-xl">
@@ -180,6 +177,29 @@ export function Hero() {
                 <p className="text-xs font-semibold text-cyan-600">
                   {claims.filter((c) => progress >= c.threshold).length}/{claims.length} approved
                 </p>
+              </div>
+            </div>
+
+            {/* Floating widget — Top Left */}
+            <div className="absolute -top-5 -left-6 z-20 animate-float-slow">
+              <div className="flex items-center gap-2 pl-2 pr-3.5 py-2 rounded-full bg-white/80 backdrop-blur-md border border-white/40 shadow-xl shadow-slate-200/60">
+                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-50 border border-emerald-100">
+                  <TrendingUp className="w-3.5 h-3.5 text-emerald-600" />
+                </span>
+                <span className="text-sm font-bold text-[#0B1120] tabular-nums">+24% Revenue</span>
+              </div>
+            </div>
+
+            {/* Floating widget — Bottom Right */}
+            <div className="absolute -bottom-6 -right-5 z-20 animate-float-slower">
+              <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl bg-white/80 backdrop-blur-md border border-white/40 shadow-xl shadow-slate-200/60">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-cyan-50 border border-cyan-100">
+                  <Shield className="w-4 h-4 text-cyan-600" />
+                </span>
+                <div className="leading-tight">
+                  <p className="text-[10px] font-semibold tracking-widest uppercase text-slate-400">Status</p>
+                  <p className="text-sm font-bold text-[#0B1120]">AI Active</p>
+                </div>
               </div>
             </div>
           </div>
