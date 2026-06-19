@@ -8,8 +8,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-14">
           {/* Brand */}
           <div>
-            <a href="/" className="text-2xl font-bold text-white tracking-tight">
-              revedent<span className="text-cyan-500">.ai</span>
+            <a href="/" className="flex items-center">
+              <RevedentLogo height={34} textColor="#ffffff" />
             </a>
             <p className="mt-4 text-slate-400 text-sm leading-relaxed max-w-xs">
               AI-driven dental revenue cycle management for premium practices that refuse to leave money on the table.
