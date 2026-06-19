@@ -14,7 +14,7 @@ function StatCard({ stat, description, icon }: StatCardProps) {
     ArrowUpRight;
 
   return (
-    <div className="group text-center py-10 px-4 rounded-2xl transition-shadow duration-300 hover:shadow-[0_8px_30px_rgba(11,17,32,0.06)]">
+    <div className="group text-center py-10 px-4 transition-shadow duration-300">
       <div className="inline-flex items-center justify-center gap-1 mb-3">
         {stat.startsWith("+") || stat.startsWith("-") ? (
           <>
@@ -58,7 +58,7 @@ export function ValueProposition() {
         <h2 className="text-3xl md:text-4xl font-bold text-navy text-center mb-16 tracking-tight">
           Why choose Revedent?
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="bg-white rounded-2xl shadow-sm border border-slate-100 divide-y sm:divide-y-0 sm:divide-x divide-slate-100 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((s) => (
             <StatCard key={s.stat} {...s} />
           ))}
