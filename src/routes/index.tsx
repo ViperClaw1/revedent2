@@ -5,6 +5,7 @@ import { TrustBanner } from "@/components/TrustBanner";
 import { ValueProposition } from "@/components/ValueProposition";
 import { Services } from "@/components/Services";
 import { HowItWorks } from "@/components/HowItWorks";
+import { Pricing } from "@/components/Pricing";
 import { Testimonials } from "@/components/Testimonials";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
