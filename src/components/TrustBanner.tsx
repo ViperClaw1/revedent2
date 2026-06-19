@@ -1,10 +1,12 @@
+import { Hexagon, Triangle, Box, Circle, Diamond } from "lucide-react";
+
 export function TrustBanner() {
   const partners = [
-    { name: "Dentrix", logo: "Dentrix" },
-    { name: "Curve Dental", logo: "Curve" },
-    { name: "Eaglesoft", logo: "Eaglesoft" },
-    { name: "Open Dental", logo: "Open Dental" },
-    { name: "Denticon", logo: "Denticon" },
+    { name: "Dentrix", Icon: Hexagon, color: "text-cyan-600" },
+    { name: "Curve", Icon: Circle, color: "text-blue-600" },
+    { name: "Eaglesoft", Icon: Triangle, color: "text-indigo-600" },
+    { name: "Open Dental", Icon: Box, color: "text-emerald-600" },
+    { name: "Denticon", Icon: Diamond, color: "text-rose-500" },
   ];
 
   return (
@@ -13,15 +15,16 @@ export function TrustBanner() {
         <p className="text-center text-xs uppercase tracking-[0.2em] text-slate-400 font-medium mb-8">
           Trusted by modern practices using:
         </p>
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-14">
-          {partners.map((partner) => (
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+          {partners.map(({ name, Icon, color }) => (
             <div
-              key={partner.name}
-              className="group cursor-default select-none"
-              title={partner.name}
+              key={name}
+              className="group flex items-center gap-2 cursor-default select-none grayscale opacity-40 transition-all duration-300 hover:grayscale-0 hover:opacity-100"
+              title={name}
             >
-              <span className="text-lg md:text-xl font-bold tracking-tight text-navy grayscale opacity-50 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100">
-                {partner.logo}
+              <Icon className={`w-6 h-6 ${color}`} strokeWidth={2.25} />
+              <span className="text-lg md:text-xl font-bold tracking-tight text-navy">
+                {name}
               </span>
             </div>
           ))}
