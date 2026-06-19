@@ -7,6 +7,7 @@ import { Services } from "@/components/Services";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Pricing } from "@/components/Pricing";
 import { Testimonials } from "@/components/Testimonials";
+import { AboutUs } from "@/components/AboutUs";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
 
@@ -34,6 +35,7 @@ function Index() {
         <HowItWorks />
         <Pricing />
         <Testimonials />
+        <AboutUs />
         <FinalCTA />
       </main>
       <Footer />
