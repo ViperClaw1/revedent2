@@ -14,7 +14,7 @@ function StatCard({ stat, description, icon }: StatCardProps) {
     ArrowUpRight;
 
   return (
-    <div className="group text-center py-10 px-4 rounded-2xl transition-shadow duration-300 hover:shadow-[0_8px_30px_rgba(11,17,32,0.06)]">
+    <div className="group text-center py-10 px-4 transition-shadow duration-300">
       <div className="inline-flex items-center justify-center gap-1 mb-3">
         {stat.startsWith("+") || stat.startsWith("-") ? (
           <>
