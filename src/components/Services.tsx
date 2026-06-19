@@ -20,9 +20,6 @@ export function Services() {
     <section id="services" className="bg-[#0B1120] text-white py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="max-w-3xl mb-16">
-          <span className="inline-block px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold tracking-widest uppercase mb-5">
-            Our Services
-          </span>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
             Full-Cycle Revenue Management
           </h2>

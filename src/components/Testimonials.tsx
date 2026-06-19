@@ -54,9 +54,6 @@ export function Testimonials() {
     <section id="testimonials" className="bg-[#F8FAFC] py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-block px-3 py-1 rounded-full bg-cyan-50 text-cyan-600 text-xs font-semibold tracking-widest uppercase mb-5">
-            Testimonials
-          </span>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B1120] tracking-tight leading-tight">
             What Practice Owners Say
           </h2>
