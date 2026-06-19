@@ -81,10 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Revedent.ai delivers premium AI-driven dental billing services that maximize revenue and eliminate claim friction." },
       { name: "author", content: "Revedent.ai" },
       { property: "og:title", content: "Revedent.ai — AI-Driven Dental Billing" },
-      { property: "og:description", content: "Premium AI-driven dental billing." },
+      { property: "og:description", content: "Revedent.ai delivers premium AI-driven dental billing services that maximize revenue and eliminate claim friction." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Revedent" },
+      { name: "twitter:title", content: "Revedent.ai — AI-Driven Dental Billing" },
+      { name: "twitter:description", content: "Revedent.ai delivers premium AI-driven dental billing services that maximize revenue and eliminate claim friction." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/edd049f6-f833-4e83-9e01-74d139def94f" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/edd049f6-f833-4e83-9e01-74d139def94f" },
     ],
     links: [
       {
