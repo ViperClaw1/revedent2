@@ -15,8 +15,8 @@ export function Navbar() {
     <header className="fixed top-0 inset-x-0 z-50">
       <div className="backdrop-blur-xl bg-white/60 border-b border-white/40 shadow-[0_1px_0_0_rgba(255,255,255,0.6)]">
         <nav className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-          <a href="/" className="text-xl font-extrabold tracking-tight text-navy">
-            revedent<span className="text-cyan">.ai</span>
+          <a href="/" className="flex items-center">
+            <RevedentLogo height={28} />
           </a>
 
           <ul className="hidden md:flex items-center gap-8">
