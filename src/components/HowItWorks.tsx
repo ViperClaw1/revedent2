@@ -18,7 +18,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="relative bg-white py-24 px-6 overflow-hidden">
+    <section id="how-it-works" className="relative bg-slate-50 py-24 px-6 overflow-hidden">
       {/* Dot-matrix background */}
       <svg className="absolute inset-0 w-full h-full opacity-40 pointer-events-none" aria-hidden="true">
         <defs>
