@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 const links = [
   { label: "Services", href: "#services" },
   { label: "Pricing", href: "#pricing" },
-  { label: "About", href: "#about" },
+  { label: "How it Works", href: "#how-it-works" },
   { label: "Resources", href: "#resources" },
 ];
 
@@ -34,7 +34,7 @@ export function Navbar() {
 
           <div className="hidden md:block">
             <a
-              href="#demo"
+              href="#contact"
               className="inline-flex items-center rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/40"
             >
               Book a Demo
@@ -67,7 +67,7 @@ export function Navbar() {
               ))}
               <li>
                 <a
-                  href="#demo"
+                  href="#contact"
                   onClick={() => setOpen(false)}
                   className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-cyan-500/30"
                 >

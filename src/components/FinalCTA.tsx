@@ -1,6 +1,6 @@
 export function FinalCTA() {
   return (
-    <section className="px-6 py-28 bg-gradient-to-br from-[#0B1120] via-[#0B1120] to-[#1A2540]">
+    <section id="contact" className="px-6 py-28 bg-gradient-to-br from-[#0B1120] via-[#0B1120] to-[#1A2540]">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
           Stop leaving money on the table.
