@@ -12,7 +12,7 @@ export function FinalCTA() {
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-8 py-3.5 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-white font-bold text-base transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/40">
+          <button className="px-8 py-3.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold text-base transition-all duration-300 hover:scale-105 shadow-[0_8px_20px_-6px_rgba(6,182,212,0.6),inset_0_1px_0_rgba(255,255,255,0.3)]">
             Book Your Free Audit
           </button>
           <button className="px-8 py-3.5 rounded-full border border-white/30 text-white font-bold text-base transition-all duration-300 hover:bg-white/10">

@@ -101,7 +101,7 @@ export function Hero() {
           </p>
 
           <div className="mt-9 flex flex-col sm:flex-row gap-4">
-            <button className="group inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-white font-bold transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/40">
+            <button className="group inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold transition-all duration-300 hover:scale-105 shadow-[0_8px_20px_-6px_rgba(6,182,212,0.6),inset_0_1px_0_rgba(255,255,255,0.3)]">
               Get Started
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
             </button>

@@ -35,7 +35,7 @@ export function Navbar() {
           <div className="hidden md:block">
             <a
               href="#contact"
-              className="inline-flex items-center rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/40"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 shadow-[0_8px_20px_-6px_rgba(6,182,212,0.6),inset_0_1px_0_rgba(255,255,255,0.3)]"
             >
               Book a Demo
             </a>
@@ -69,7 +69,7 @@ export function Navbar() {
                 <a
                   href="#contact"
                   onClick={() => setOpen(false)}
-                  className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-cyan-500 to-cyan-400 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-cyan-500/30"
+                  className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-2.5 text-sm font-semibold text-white shadow-[0_8px_20px_-6px_rgba(6,182,212,0.6),inset_0_1px_0_rgba(255,255,255,0.3)]"
                 >
                   Book a Demo
                 </a>

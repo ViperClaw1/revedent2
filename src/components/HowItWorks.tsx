@@ -31,9 +31,6 @@ export function HowItWorks() {
 
       <div className="relative max-w-6xl mx-auto">
         <div className="max-w-3xl mb-20">
-          <span className="inline-block px-3 py-1 rounded-full bg-cyan-50 text-cyan-600 text-xs font-semibold tracking-widest uppercase mb-5">
-            How it Works
-          </span>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B1120] tracking-tight leading-tight">
             From sign-up to paid claims in three steps.
           </h2>
