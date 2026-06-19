@@ -1,4 +1,4 @@
-import { ShieldCheck, FileText, Banknote, TrendingUp, BookOpen, BadgeCheck, type LucideIcon } from "lucide-react";
+import { ShieldCheck, FileText, Banknote, TrendingUp, BookOpen, BadgeCheck, ArrowRight, type LucideIcon } from "lucide-react";
 
 type Service = {
   icon: LucideIcon;
@@ -32,13 +32,16 @@ export function Services() {
           {services.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}
-              className="group bg-white rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_50px_-20px_rgba(6,182,212,0.35)]"
+              className="group bg-white border border-slate-100 rounded-2xl p-8 transition-all duration-500 ease-out hover:-translate-y-2 hover:border-cyan-200 hover:shadow-[0_20px_40px_-12px_rgba(6,182,212,0.15)]"
             >
-              <div className="w-12 h-12 rounded-xl bg-cyan-50 flex items-center justify-center mb-6">
+              <div className="w-12 h-12 rounded-full p-3 bg-gradient-to-br from-cyan-50 to-white ring-1 ring-slate-100/50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Icon className="w-6 h-6 text-cyan-500" strokeWidth={2} />
               </div>
               <h3 className="text-xl font-bold text-[#0B1120] mb-3 tracking-tight">{title}</h3>
               <p className="text-slate-500 leading-relaxed">{desc}</p>
+              <div className="mt-5 flex items-center">
+                <ArrowRight className="w-5 h-5 text-cyan-500 opacity-0 -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
+              </div>
             </div>
           ))}
         </div>
