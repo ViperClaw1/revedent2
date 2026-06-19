@@ -35,6 +35,7 @@ function Index() {
         <HowItWorks />
         <Pricing />
         <Testimonials />
+        <AboutUs />
         <FinalCTA />
       </main>
       <Footer />
