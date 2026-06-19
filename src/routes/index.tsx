@@ -32,6 +32,7 @@ function Index() {
         <ValueProposition />
         <Services />
         <HowItWorks />
+        <Pricing />
         <Testimonials />
         <FinalCTA />
       </main>
