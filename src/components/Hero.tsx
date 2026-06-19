@@ -68,11 +68,22 @@ export function Hero() {
 
   return (
     <section className="relative pt-32 pb-16 px-6 min-h-[90vh] flex items-center overflow-hidden">
-      {/* soft background accents */}
+      {/* Dot-matrix background */}
+      <svg className="absolute inset-0 w-full h-full opacity-40 pointer-events-none" aria-hidden="true">
+        <defs>
+          <pattern id="hero-dots" width="20" height="20" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1" fill="#CBD5E1" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#hero-dots)" />
+      </svg>
+
+      {/* Soft background accents */}
       <div className="pointer-events-none absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-cyan-400/10 blur-3xl" />
       <div className="pointer-events-none absolute top-1/3 -left-40 h-[400px] w-[400px] rounded-full bg-cyan-300/10 blur-3xl" />
+      <div className="pointer-events-none absolute -top-20 -right-20 h-[800px] w-[800px] rounded-full bg-cyan-50 blur-3xl" />
 
-      <div className="relative max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* LEFT — Content */}
         <div className="flex flex-col justify-center">
           <span className="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-cyan-50 text-cyan-600 text-xs font-semibold tracking-widest uppercase border border-cyan-100">

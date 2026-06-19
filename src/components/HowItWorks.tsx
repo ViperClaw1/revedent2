@@ -18,8 +18,18 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-white py-24 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="how-it-works" className="relative bg-white py-24 px-6 overflow-hidden">
+      {/* Dot-matrix background */}
+      <svg className="absolute inset-0 w-full h-full opacity-40 pointer-events-none" aria-hidden="true">
+        <defs>
+          <pattern id="hiw-dots" width="20" height="20" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1" fill="#CBD5E1" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#hiw-dots)" />
+      </svg>
+
+      <div className="relative max-w-6xl mx-auto">
         <div className="max-w-3xl mb-20">
           <span className="inline-block px-3 py-1 rounded-full bg-cyan-50 text-cyan-600 text-xs font-semibold tracking-widest uppercase mb-5">
             How it Works
