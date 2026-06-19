@@ -4,22 +4,22 @@ const teamMembers = [
   {
     name: "Alex Mercer",
     role: "Operations Manager",
-    image: "/team-1.jpg",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
   },
   {
     name: "Jordan Blake",
     role: "AI Systems Lead",
-    image: "/team-2.jpg",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
   },
   {
     name: "Samira Holt",
     role: "Insurance Verification Expert",
-    image: "/team-3.jpg",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
   },
   {
     name: "Casey Nguyen",
     role: "Client Experience Manager",
-    image: "/team-4.jpg",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
   },
 ];
 
@@ -42,7 +42,7 @@ export function AboutUs() {
           {/* Right Column */}
           <div className="relative">
             <img
-              src="/about-mission.jpg"
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
               alt="Modern professional team collaborating"
               className="w-full rounded-2xl shadow-xl object-cover aspect-[4/3]"
             />
@@ -74,7 +74,7 @@ export function AboutUs() {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full aspect-square object-cover"
+                    className="w-full h-full object-cover rounded-2xl"
                   />
                 </div>
                 <h4 className="mt-4 text-lg font-bold text-[#0B1120]">
