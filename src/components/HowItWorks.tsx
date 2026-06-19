@@ -18,7 +18,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="relative bg-white py-24 px-6 overflow-hidden">
+    <section id="how-it-works" className="relative bg-slate-50 py-24 px-6 overflow-hidden">
       {/* Dot-matrix background */}
       <svg className="absolute inset-0 w-full h-full opacity-40 pointer-events-none" aria-hidden="true">
         <defs>
@@ -52,19 +52,13 @@ export function HowItWorks() {
 
               {/* Number */}
               <div className="flex md:justify-end items-start">
-                <span
-                  className="text-7xl md:text-8xl font-black leading-none tracking-tighter select-none"
-                  style={{
-                    color: "transparent",
-                    WebkitTextStroke: "1.5px rgb(6 182 212 / 0.45)",
-                  }}
-                >
+                <span className="text-7xl md:text-8xl font-black leading-none tracking-tighter select-none text-[#0B1120]/10">
                   {step.n}
                 </span>
               </div>
 
               {/* Content */}
-              <div className="pt-3 md:pt-6">
+              <div className="bg-white rounded-xl shadow-sm p-6">
                 <h3 className="text-2xl md:text-3xl font-bold text-[#0B1120] tracking-tight mb-3">
                   {step.title}
                 </h3>
