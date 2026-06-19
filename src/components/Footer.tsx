@@ -1,4 +1,5 @@
 import { Twitter, Linkedin, Facebook, Instagram, ArrowRight } from "lucide-react";
+import { RevedentLogo } from "./RevedentLogo";
 
 export function Footer() {
   return (
