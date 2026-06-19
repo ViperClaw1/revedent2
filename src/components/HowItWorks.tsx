@@ -39,23 +39,23 @@ export function HowItWorks() {
         <div className="relative">
           {steps.map((step, idx) => (
             <div key={step.n} className="relative grid grid-cols-[auto_1fr] md:grid-cols-[260px_1fr] gap-6 md:gap-12 pb-16 last:pb-0">
-              {/* dashed connector */}
+              {/* gradient connector */}
               {idx < steps.length - 1 && (
                 <div
                   aria-hidden
-                  className="absolute left-[60px] md:left-[110px] top-24 bottom-0 w-px border-l-2 border-dashed border-cyan-300"
+                  className="absolute left-[60px] md:left-[110px] top-24 bottom-0 w-px bg-gradient-to-b from-cyan-300 via-cyan-100 to-transparent"
                 />
               )}
 
               {/* Number */}
               <div className="flex md:justify-end items-start">
-                <span className="text-7xl md:text-8xl font-black leading-none tracking-tighter select-none text-[#0B1120]/10">
+                <span className="text-8xl md:text-9xl font-black leading-none tracking-tighter select-none text-[#0B1120]/10 -mr-8 md:-mr-16">
                   {step.n}
                 </span>
               </div>
 
               {/* Content */}
-              <div className="bg-white rounded-xl shadow-sm p-6">
+              <div className="relative z-10 bg-white rounded-xl shadow-sm p-6">
                 <h3 className="text-2xl md:text-3xl font-bold text-[#0B1120] tracking-tight mb-3">
                   {step.title}
                 </h3>
