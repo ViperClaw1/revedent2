@@ -68,19 +68,15 @@ export function Pricing() {
                   relative flex flex-col rounded-2xl p-8 transition-all duration-300
                   ${
                     isPopular
-                      ? "bg-white border-2 border-cyan-500 shadow-xl shadow-cyan-500/10 md:scale-105 z-10"
+                      ? "bg-white border-t-4 border-cyan-500 shadow-xl shadow-cyan-500/10 md:scale-105 z-10"
                       : "bg-white shadow-sm border border-slate-100"
                   }
                 `}
               >
-                {isPopular && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center rounded-full bg-cyan-500 px-3 py-1 text-xs font-semibold text-white tracking-wide uppercase">
-                    Most Popular
-                  </span>
-                )}
 
-                <h3 className="text-lg font-semibold text-navy tracking-tight">
+                <h3 className="text-lg font-semibold text-navy tracking-tight flex items-center gap-2">
                   {tier.name}
+                  {isPopular && <Star className="h-4 w-4 fill-cyan-500 text-cyan-500" />}
                 </h3>
 
                 <div className="mt-4 flex items-baseline gap-1">
