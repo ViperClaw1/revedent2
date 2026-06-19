@@ -120,7 +120,7 @@ export function Hero() {
             {/* glow */}
             <div className="absolute -inset-6 bg-gradient-to-tr from-cyan-400/20 via-transparent to-cyan-300/20 blur-2xl rounded-3xl" />
 
-            <div className="relative rounded-2xl bg-white/80 backdrop-blur-xl border border-white/70 shadow-[0_30px_80px_-20px_rgba(11,17,32,0.25)] overflow-hidden">
+            <div className="relative rounded-2xl bg-white/80 backdrop-blur-md border border-white/20 shadow-[0_40px_100px_-24px_rgba(15,23,42,0.18)] overflow-hidden">
               {/* Header */}
               <div className="flex items-center justify-between px-6 pt-6 pb-5 border-b border-slate-100">
                 <div>

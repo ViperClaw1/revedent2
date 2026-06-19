@@ -66,7 +66,7 @@ export function Testimonials() {
           {testimonials.map((t) => (
             <article
               key={t.name}
-              className="bg-white rounded-xl p-6 shadow-sm mb-6 break-inside-avoid border border-slate-100"
+              className="bg-white/80 backdrop-blur-md rounded-2xl p-6 shadow-[0_20px_60px_-16px_rgba(15,23,42,0.12)] mb-6 break-inside-avoid border border-white/20"
             >
               <Stars />
               <p className="text-slate-600 leading-relaxed mb-5">"{t.quote}"</p>
