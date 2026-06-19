@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { RevedentLogo } from "./RevedentLogo";
 
 const links = [
   { label: "Services", href: "#services" },
